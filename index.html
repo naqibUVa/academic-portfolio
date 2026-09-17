@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--
+  ============================================================
+  Naqib Sa'd Pathan — academic portfolio
+
+  You rarely need to touch this file. All the content lives in
+  js/data/ as plain lists:
+
+    js/data/profile.js       name, email, links, photo, CV
+    js/data/research.js      research threads
+    js/data/publications.js  papers
+    js/data/experience.js    roles
+    js/data/teaching.js      teaching, talks, service, awards
+    js/data/about.js         bio, education, skills
+
+  The only thing here worth editing is the <title> and
+  <meta description> just below — those show up in Google
+  results and link previews.
+  ============================================================
+-->
+
+<title>Naqib Sa'd Pathan — PhD Candidate, [Field]</title>
+<meta name="description" content="Naqib Sa'd Pathan — PhD candidate at [University] researching [research area]. Publications, research, and teaching.">
+<meta name="author" content="Naqib Sa'd Pathan">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Naqib Sa'd Pathan — PhD Candidate">
+<meta property="og:description" content="PhD candidate at [University] researching [research area].">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%234f46e5'/><text x='50' y='69' font-size='56' font-family='Georgia,serif' font-weight='700' fill='white' text-anchor='middle'>N</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="wordmark" id="wordmark" href="#top"></a>
+
+    <ul class="nav-links">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="theme-toggle" type="button" aria-label="Switch color theme">
+      <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a6.8 6.8 0 0 0 10.5 10.5z"/></svg>
+    </button>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- Each section is an empty shell. The matching js/render/ script
+       fills it from the matching js/data/ file. -->
+
+  <section class="hero" id="top">
+    <div class="wrap hero-grid" id="hero"></div>
+  </section>
+
+  <section class="section" id="research">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span class="num">01</span> Research</h2>
+      <div id="research-body"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="publications">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span class="num">02</span> Publications</h2>
+      <div id="publications-body"></div>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span class="num">03</span> Experience</h2>
+      <div id="experience-body"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="teaching">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span class="num">04</span> Teaching, talks &amp; service</h2>
+      <div class="two-col" id="teaching-body"></div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap">
+      <h2 class="section-title reveal"><span class="num">05</span> About</h2>
+      <div class="two-col" id="about-body"></div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="contact">
+    <div class="wrap contact" id="contact-body"></div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <p id="footer-name"></p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     Scripts load in three stages, and the order matters:
+       1. data    — your content
+       2. render  — turns that content into the page
+       3. ui      — theme, scroll effects (must run after render)
+     Adding a new section? Add its data file to stage 1 and its
+     render file to stage 2, both before the ui block.
+     ============================================================ -->
+
+<!-- 1. Your content -->
+<script src="js/data/profile.js"></script>
+<script src="js/data/research.js"></script>
+<script src="js/data/publications.js"></script>
+<script src="js/data/experience.js"></script>
+<script src="js/data/teaching.js"></script>
+<script src="js/data/about.js"></script>
+
+<!-- 2. Rendering -->
+<script src="js/render/_helpers.js"></script>
+<script src="js/render/profile.js"></script>
+<script src="js/render/research.js"></script>
+<script src="js/render/publications.js"></script>
+<script src="js/render/experience.js"></script>
+<script src="js/render/teaching.js"></script>
+<script src="js/render/about.js"></script>
+
+<!-- 3. Interface -->
+<script src="js/ui/theme.js"></script>
+<script src="js/ui/reveal.js"></script>
+<script src="js/ui/nav.js"></script>
+</body>
+</html>
