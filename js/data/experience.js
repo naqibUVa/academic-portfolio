@@ -1,39 +1,31 @@
 /* ============================================================
-   EXPERIENCE — roles, newest first.
-
-   This is the section industry recruiters read first, so keep the
-   descriptions outcome-led: name the tools and the scale.
-
-   HOW TO ADD A ROLE: copy one { ... } block and edit it.
+   EXPERIENCE — Professional, research, and academic roles.
    ============================================================ */
 
 const EXPERIENCE = [
 
   {
-    when: "[2024] — Present",
+    when: "2022 — Present",
     role: "Graduate Research Assistant",
-    org:  "[Lab / University]",
-    body: `What you build and own day to day. For industry readers,
-           name the tools and the scale — "trained models on a 400-GPU
-           cluster," "pipeline processing 2 TB/day."`,
-    tags: ["Python", "PyTorch", "[tool]"],
+    org:  "Rohde Lab, University of Virginia",
+    body: `Conducting research on optimal transport theory, transport-based morphometry (TBM), and mathematical machine learning frameworks for multiplex imaging and high-dimensional single-cell measurements.`,
+    tags: ["Python", "PyTorch", "Computational Biology", "Optimal Transport", "Machine Learning"],
   },
 
   {
-    when: "Summer [2024]",
+    when: "Summer 2026",
     role: "Research Intern",
-    org:  "[Company or Lab]",
-    body: `Problem, what you shipped, measurable result. Note if it went
-           to production or led to a publication or patent.`,
-    tags: ["[stack]"],
+    org:  "Genentech, South San Francisco, CA",
+    body: `Developed computational autofluorescence correction methods for cyclic immunofluorescence imaging (4i technique) to enhance signal fidelity and multiplex biomarker quantification across tissue microenvironments.`,
+    tags: ["Computational Biology", "Multiplex Imaging (4i)", "Autofluorescence Correction", "Python"],
   },
 
   {
-    when: "[2020] — [2023]",
-    role: "[Earlier Role]",
-    org:  "[Organization]",
-    body: `Prior position — industry role, MSc research, or similar.`,
-    tags: [],
+    when: "April 2016 — August 2022",
+    role: "Lecturer / Assistant Professor",
+    org:  "Chittagong University of Engineering and Technology, Chittagong, Bangladesh",
+    body: `Taught undergraduate courses, mentored student research projects, and led research investigations in biomedical signal processing, computer vision, and embedded systems. Currently on study leave for doctoral studies.`,
+    tags: ["Digital Signal Processing", "Signals and Systems", "VLSI Technology", "Microprocessors & Interfacing"],
   },
 
 ];

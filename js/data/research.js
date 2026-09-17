@@ -1,48 +1,48 @@
 /* ============================================================
-   RESEARCH — your research agenda.
-
-   HOW TO ADD A THREAD: copy one { ... } block, paste it after
-   the last one, and edit the text. Mind the comma between blocks.
+   RESEARCH — Research agenda and core directions.
    ============================================================ */
 
 const RESEARCH = {
 
-  // The through-line connecting your work. Committees look for a
-  // coherent agenda, not a list of unrelated papers.
-  intro: `My work sits at the intersection of [area A] and [area B].
-          The unifying question across these threads is [the question].
-          Below are the three directions I'm currently pursuing.`,
+  intro: `My research focuses on mathematical data science, optimal transport theory, and machine learning
+          for biomedical applications. In particular, I develop frameworks to analyze, model, and classify
+          complex spatial distributions, point sets, and high-dimensional multiplex single-cell data.`,
 
   threads: [
 
     {
-      title: "[Research Thread One]",
-      body: `Two or three sentences: the open problem, your approach,
-             and what you've established so far. Name the contribution
-             explicitly.`,
-      tags: ["[method]", "[technique]"],
+      title: "Optimal Transport & Transport-Based Morphometry (TBM)",
+      body: `We develop mathematical frameworks leveraging linear optimal transport (LOT) and cumulative
+             distribution transforms (such as RCDT) for modeling and classifying complex distributions,
+             point clouds, and biological structures. These methods provide closed-form operations, sample
+             efficiency, and interpretability in biological pattern recognition.`,
+      tags: ["Optimal Transport", "Linear Optimal Transport", "Point Set Classification", "TBM"],
       links: [
         { label: "Related papers", url: "#publications" },
       ],
     },
 
     {
-      title: "[Research Thread Two]",
-      body: `Same shape. If a thread produced a dataset, benchmark, or
-             tool that others use, say so here — reuse is evidence of
-             impact.`,
-      tags: ["[method]", "[technique]"],
+      title: "Multiplex Imaging & Spatial Single-Cell Analysis (4i)",
+      body: `High-plex spatial biology modalities, such as iterative indirect immunofluorescence imaging (4i),
+             capture dozens of protein markers across millions of cells. We formulate mathematical methods
+             and computational pipelines—establishing a calculus for high-dimensional single-cell measurements—to
+             quantify phenotypic heterogeneity, structural variation, and spatial organizations across tissues.`,
+      tags: ["4i Technique", "Multiplex Imaging", "Spatial Biology", "Single-Cell Analysis"],
       links: [
-        { label: "Code & data", url: "#" },
+        { label: "Related papers", url: "#publications" },
       ],
     },
 
     {
-      title: "[Research Thread Three]",
-      body: `In-progress work belongs here too. Label it clearly as
-             ongoing and state what you expect to submit and where.`,
-      tags: ["[method]", "ongoing"],
-      links: [],
+      title: "Biomedical Signal & Clinical Image Processing",
+      body: `Investigating adaptive signal processing and machine learning algorithms for physiological monitoring
+             (photoplethysmography [PPG] during exercise, electroencephalography [EEG] for sleep and motor imagery)
+             and diagnostic imaging (digital pathology nuclear morphometry, retinal vessel segmentation, brain MRI).`,
+      tags: ["PPG & EEG Processing", "Digital Pathology", "Adaptive Filtering", "Machine Learning"],
+      links: [
+        { label: "Related papers", url: "#publications" },
+      ],
     },
 
   ],

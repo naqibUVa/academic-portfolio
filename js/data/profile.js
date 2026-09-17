@@ -11,30 +11,30 @@
 const PROFILE = {
 
   // Your name, as it should appear in the header and footer.
-  name: "Naqib Sa'd Pathan",
+  name: "Naqib Sad Pathan",
 
   // How your name is written in author lists. The publications
   // renderer bolds this automatically wherever it appears.
-  authorName: "N. S. Pathan",
+  authorName: "Naqib Sad Pathan",
 
   // Small pill above your name. Set to "" to hide it entirely.
-  availability: "On the academic job market — [year]",
+  availability: "PhD Candidate · Spring 2027",
 
   // Your position. The <span class="accent"> makes the field
   // stand out in your accent color — keep it or remove it.
-  position: 'PhD Candidate in <span class="accent">[Field]</span>',
+  position: 'PhD Candidate in <span class="accent">Electrical Engineering</span>',
 
   // Department and institution, on the line underneath.
-  affiliation: "[Department], [University]",
+  affiliation: "Imaging and Data Science Lab (Rohde Lab), University of Virginia",
 
   // Two sentences on your research, written for a committee
   // member outside your subfield.
-  intro: `I research [one-line description of your research problem].
-          My work combines [method A] and [method B] to [what it enables],
-          with applications to [domain].
-          Advised by <a href="#">[Advisor Name]</a>.`,
+  intro: `I am a PhD candidate in Electrical Engineering at the University of Virginia,
+          working with <a href="https://datascience.virginia.edu/people/gustavo-k-rohde" target="_blank" rel="noopener">Prof. Gustavo K. Rohde</a>.
+          My research focuses on optimal transport, multiplex image analysis (4i technique),
+          and machine learning methods for high-dimensional biomedical measurements.`,
 
-  email: "you@university.edu",
+  email: "qpb3vt@virginia.edu",
 
   // Path to your CV. Drop the file in the academic/ folder.
   cv: "cv.pdf",
@@ -44,21 +44,22 @@ const PROFILE = {
   photo: "",
 
   // Profile links, shown under the hero buttons and in Contact.
-  // Delete any line you don't need. Add more the same way.
   links: [
-    { label: "Google Scholar", url: "#" },
-    { label: "ORCID",          url: "#" },
-    { label: "GitHub",         url: "#" },
-    { label: "LinkedIn",       url: "#" },
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=NUPZdZoAAAAJ" },
+    { label: "ORCID",          url: "https://orcid.org/0000-0002-1571-8221" },
+    { label: "GitHub",         url: "https://github.com/naqibUVa" },
+    { label: "LinkedIn",       url: "https://www.linkedin.com/in/naqib-sad-pathan" },
+    { label: "ResearchGate",   url: "https://www.researchgate.net/profile/Naqib-Sad-Pathan" },
   ],
 
   // ---- Contact section ----
 
   contactNote: `I'm happy to talk about research, collaborations,
-                or open positions. Email is the surest way to reach me.`,
+                or open opportunities. Email is the surest way to reach me.`,
 
   // Office address. Set to "" to hide it.
-  address: `[Office / Building], [Department]<br>
-            [University], [City, Country]`,
+  address: `Medical Research Building 4 (MR4), University of Virginia<br>
+            1337 Jefferson Park Avenue<br>
+            Charlottesville, VA 22903, USA`,
 
 };

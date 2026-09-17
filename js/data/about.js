@@ -1,50 +1,54 @@
 /* ============================================================
-   ABOUT — bio, education, skills, languages.
+   ABOUT — Bio, education, and technical skills.
    ============================================================ */
 
 const ABOUT = {
 
-  // One entry per paragraph. Add or remove lines freely.
+  // One entry per paragraph.
   paragraphs: [
 
-    `I'm a PhD candidate at University of Virginia, where I work on optimal transport.
-     I came to this problem through [the origin story — a course,
-     a job, a paper].`,
+    `I am a PhD candidate in Electrical Engineering at the University of Virginia, advised by
+     <a href="https://datascience.virginia.edu/people/gustavo-k-rohde" target="_blank" rel="noopener">Prof. Gustavo K. Rohde</a>
+     in the Imaging and Data Science Laboratory. My work sits at the intersection of mathematical data science,
+     machine learning, and computational biology, with a special focus on optimal transport and multiplex imaging.`,
 
-    `I'm looking for [postdoc / faculty / research scientist] positions
-     starting Summer , and I'm interested in groups working on Computation Biology, Multiplex Imaging, .`,
+    `My doctoral dissertation develops a mathematical calculus for high-dimensional single-cell measurements,
+     providing principled tools to model, classify, and understand spatial heterogeneity and cellular organizations
+     in high-plex multiplexed imaging technologies (such as the 4i technique).`,
 
-    `Outside research, [something specific and true].`,
+    `Prior to joining UVA, I served as a Lecturer and Assistant Professor in the Department of Electrical and
+     Electronic Engineering at Chittagong University of Engineering and Technology (CUET) in Bangladesh, where I
+     mentored student researchers and taught courses in signal processing, systems, and hardware interfacing.`,
 
   ],
 
-  // Degrees, newest first. Same title/meta shape as teaching.js.
+  // Degrees, newest first.
   education: [
 
     {
-      title: "PhD, Electrical Engineering",
-      meta: `University of Virginia, 2022–Spring 2027 <br>
-              Thesis: “A calculus for high dimensional single-cell
-measurements” · Advisor: Gustavo Kunde Rhode` },
-
-    {
-      title: "MSc, Electrical and Electronic Engineering",
-      meta: "Chittagong University of Engineering and Technology, 2021"
+      title: "PhD in Electrical Engineering",
+      meta: `University of Virginia, 2022 – Expected Spring 2027<br>
+             Dissertation: “A calculus for high dimensional single-cell measurements”<br>
+             Advisor: Prof. Gustavo K. Rohde`,
     },
 
     {
-      title: "BSc, Electrical and Electronic Engineering",
-      meta: "Bangladesh University of Engineering and Technology, 2015"
+      title: "MSc in Electrical and Electronic Engineering",
+      meta: "Chittagong University of Engineering and Technology (CUET), 2021",
+    },
+
+    {
+      title: "BSc in Electrical and Electronic Engineering",
+      meta: "Bangladesh University of Engineering and Technology (BUET), 2015",
     },
 
   ],
 
-  // Mainly for the industry audience. Just a list of strings.
+  // Technical skills and tools.
   skills: [
-    "Python", "PyTorch", "R", "C++", "Java Script",
-    "MATLAB", "Git", "Docker", "LaTeX", "HPC / Slurm",
+    "Python", "PyTorch", "R", "C/C++", "MATLAB",
+    "Optimal Transport", "Computational Biology", "Spatial Biology / 4i",
+    "Git", "Docker", "LaTeX", "HPC / Slurm",
   ],
-
-
 
 };

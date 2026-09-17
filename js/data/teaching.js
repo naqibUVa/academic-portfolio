@@ -1,13 +1,5 @@
 /* ============================================================
    TEACHING, TALKS & SERVICE
-
-   Five independent lists. Every entry has the same two fields:
-     title — the bold line
-     meta  — the grey line underneath
-
-   Delete an entry by removing its { ... } line.
-   Delete a whole list by emptying it, e.g.  mentoring: [],
-   — empty lists disappear from the page automatically.
    ============================================================ */
 
 const TEACHING = {
@@ -15,45 +7,36 @@ const TEACHING = {
   // ---- Left column ----
 
   teaching: [
-    { title: "[Course Code] — [Course Name]",
-      meta:  "Teaching Assistant, [University], [Term Year]" },
+    { title: "Digital Signal Processing",
+      meta:  "Instructor, Chittagong University of Engineering and Technology (CUET)" },
 
-    { title: "[Course Code] — [Course Name]",
-      meta:  "Teaching Assistant, [University], [Term Year]" },
+    { title: "Signals and Systems",
+      meta:  "Instructor, Chittagong University of Engineering and Technology (CUET)" },
 
-    { title: "Guest lecture — [Topic]",
-      meta:  "[Course], [Year]" },
+    { title: "Microprocessors and Interfacing",
+      meta:  "Instructor, Chittagong University of Engineering and Technology (CUET)" },
+
+    { title: "VLSI Technology & Devices",
+      meta:  "Instructor, Chittagong University of Engineering and Technology (CUET)" },
   ],
 
   mentoring: [
-    { title: "[Student Name]",
-      meta:  "[Undergraduate / MSc] thesis, [Year] — now at [outcome]" },
+    { title: "Undergraduate Research & Capstone Supervision",
+      meta:  "Department of EEE, CUET — Mentored undergraduate researchers in biomedical signal processing, computer vision, and machine learning" },
   ],
 
   // ---- Right column ----
 
   talks: [
-    { title: "[Talk Title]",
-      meta:  "[Venue / Seminar], [Month Year]" },
-
-    { title: "[Poster Title]",
-      meta:  "[Conference], [Month Year]" },
+    { title: "Transport-Based Morphometry and Optimal Transport in Biomedical Imaging",
+      meta:  "Imaging and Data Science Laboratory, University of Virginia" },
   ],
 
   service: [
-    { title: "Reviewer",
-      meta:  "[Venue], [Venue], [Years]" },
-
-    { title: "[Committee or organizing role]",
-      meta:  "[Organization], [Year]" },
+    { title: "Peer Reviewer",
+      meta:  "IEEE Access, scientific journals, and international conferences in signal processing and imaging" },
   ],
 
-  awards: [
-    { title: "[Award or Fellowship Name]",
-      meta:  "[Awarding body], [Year]" },
-
-    { title: "[Travel grant / scholarship]",
-      meta:  "[Body], [Year]" },
-  ],
+  awards: [],
 
 };
