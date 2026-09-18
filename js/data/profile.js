@@ -41,15 +41,15 @@ const PROFILE = {
 
   // Your photo. Put me.jpg in academic/ and change this to "me.jpg".
   // Leave as "" to show the dashed placeholder box instead.
-  photo: "",
+  photo: "Naqib.JPG",
 
   // Profile links, shown under the hero buttons and in Contact.
   links: [
     { label: "Google Scholar", url: "https://scholar.google.com/citations?user=NUPZdZoAAAAJ" },
-    { label: "ORCID",          url: "https://orcid.org/0000-0002-1571-8221" },
-    { label: "GitHub",         url: "https://github.com/naqibUVa" },
-    { label: "LinkedIn",       url: "https://www.linkedin.com/in/naqib-sad-pathan" },
-    { label: "ResearchGate",   url: "https://www.researchgate.net/profile/Naqib-Sad-Pathan" },
+    { label: "ORCID", url: "https://orcid.org/0000-0002-1571-8221" },
+    { label: "GitHub", url: "https://github.com/naqibUVa" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/naqib-sad-pathan" },
+    { label: "ResearchGate", url: "https://www.researchgate.net/profile/Naqib-Sad-Pathan" },
   ],
 
   // ---- Contact section ----

@@ -54,6 +54,86 @@
   }
 }
 
+/* Palette 2: Emerald (Bio & Life Sciences) */
+:root[data-palette="emerald"] {
+  --accent: #059669;
+  --accent-soft: #10b981;
+}
+:root[data-palette="emerald"][data-theme="dark"] {
+  --accent: #34d399;
+  --accent-soft: #6ee7b7;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="emerald"][data-theme="auto"] {
+    --accent: #34d399;
+    --accent-soft: #6ee7b7;
+  }
+}
+
+/* Palette 3: Crimson (Academic Scholar) */
+:root[data-palette="crimson"] {
+  --accent: #be123c;
+  --accent-soft: #e11d48;
+}
+:root[data-palette="crimson"][data-theme="dark"] {
+  --accent: #fb7185;
+  --accent-soft: #fda4af;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="crimson"][data-theme="auto"] {
+    --accent: #fb7185;
+    --accent-soft: #fda4af;
+  }
+}
+
+/* Palette 4: Ocean (Deep Cyan & Sapphire) */
+:root[data-palette="ocean"] {
+  --accent: #0284c7;
+  --accent-soft: #0ea5e9;
+}
+:root[data-palette="ocean"][data-theme="dark"] {
+  --accent: #38bdf8;
+  --accent-soft: #7dd3fc;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="ocean"][data-theme="auto"] {
+    --accent: #38bdf8;
+    --accent-soft: #7dd3fc;
+  }
+}
+
+/* Palette 5: Amber (Editorial Warmth) */
+:root[data-palette="amber"] {
+  --accent: #d97706;
+  --accent-soft: #f59e0b;
+}
+:root[data-palette="amber"][data-theme="dark"] {
+  --accent: #fbbf24;
+  --accent-soft: #fcd34d;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="amber"][data-theme="auto"] {
+    --accent: #fbbf24;
+    --accent-soft: #fcd34d;
+  }
+}
+
+/* Palette 6: Slate (Nordic Minimal) */
+:root[data-palette="slate"] {
+  --accent: #334155;
+  --accent-soft: #475569;
+}
+:root[data-palette="slate"][data-theme="dark"] {
+  --accent: #94a3b8;
+  --accent-soft: #cbd5e1;
+}
+@media (prefers-color-scheme: dark) {
+  :root[data-palette="slate"][data-theme="auto"] {
+    --accent: #94a3b8;
+    --accent-soft: #cbd5e1;
+  }
+}
+
 /* ============================================================
    Base
    ============================================================ */
@@ -141,6 +221,114 @@ a { color: inherit; }
 .nav-links a:hover::after,
 .nav-links a.active::after { transform: scaleX(1); }
 .nav-links a.active { color: var(--text); }
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.palette-picker {
+  position: relative;
+}
+
+.palette-toggle {
+  display: grid; place-items: center;
+  width: 34px; height: 34px; padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: pointer;
+  position: relative;
+  transition: color .18s var(--ease), border-color .18s var(--ease);
+}
+.palette-toggle:hover { color: var(--text); border-color: var(--text-muted); }
+.palette-toggle svg {
+  width: 17px; height: 17px;
+}
+.palette-active-dot {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 1.5px var(--surface);
+}
+
+.palette-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 185px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow-lift);
+  padding: 6px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  animation: paletteFade .18s var(--ease);
+}
+
+@keyframes paletteFade {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.palette-menu[hidden] {
+  display: none;
+}
+
+.palette-menu-header {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  padding: 6px 10px 4px;
+}
+
+.palette-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 7px 10px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 0.85rem;
+  text-align: left;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color .15s ease;
+}
+
+.palette-option:hover {
+  background: var(--bg-alt);
+}
+
+.palette-option.active {
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.palette-swatch {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+}
 
 .theme-toggle {
   display: grid; place-items: center;

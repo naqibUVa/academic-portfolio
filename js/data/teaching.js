@@ -28,26 +28,36 @@ const TEACHING = {
     },
   ],
 
-  mentoring: [
-    {
-      title: "Undergraduate Research & Capstone Supervision",
-      meta: "Department of EEE, CUET — Mentored undergraduate researchers in biomedical signal processing, computer vision, and machine learning"
-    },
-  ],
+
 
   // ---- Right column ----
 
   talks: [
     {
-      title: "Transport-Based Morphometry and Optimal Transport in Biomedical Imaging",
-      meta: "Imaging and Data Science Laboratory, University of Virginia"
+      title: "A Computational Framework for Multiplexed Protein Imaging in Chromosome Spreads",
+      meta: "March 2026, The Systems Analysis of Stress-adapted Cancer Organelles (SASCO) Center at the University of Virginia"
+    },
+
+    {
+      title: "A Standardized System for Quantifying Nuclear Chromatin Structure from Microscopy Images for Cancer Prediction",
+      meta: "CYTO 2025, Denver, Colorado"
+    },
+
+    {
+      title: "Formulation of Predictive Models for Cytometry Data Using High-Dimensional Optimal Transport",
+      meta: "CYTO 2025, Denver, Colorado"
+    },
+
+    {
+      title: "Classification and Interpretation of High-Dimensional Distribution (HDD) in Medicine and Biology",
+      meta: "March 2025, The Systems Analysis of Stress-adapted Cancer Organelles (SASCO) Center at the University of Virginia"
     },
   ],
 
   service: [
     {
       title: "Peer Reviewer",
-      meta: "IEEE Access, scientific journals, and international conferences in signal processing and imaging"
+      meta: "Cytometry Part A"
     },
   ],
 
