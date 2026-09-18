@@ -45,7 +45,7 @@ const PROFILE = {
 
   // Profile links, shown under the hero buttons and in Contact.
   links: [
-    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=NUPZdZoAAAAJ" },
+    { label: "Google Scholar", url: "https://scholar.google.com/citations?user=NUPZdZoAAAAJ&hl=en" },
     { label: "ORCID", url: "https://orcid.org/0000-0002-1571-8221" },
     { label: "GitHub", url: "https://github.com/naqibUVa" },
     { label: "LinkedIn", url: "https://www.linkedin.com/in/naqib-sad-pathan" },
