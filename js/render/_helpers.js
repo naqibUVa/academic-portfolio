@@ -27,7 +27,11 @@ const H = {
   linkList(list, className) {
     if (!list || !list.length) return "";
     const items = list
-      .map(l => `<li><a href="${l.url}">${l.label}</a></li>`)
+      .map(l => {
+        const isExternal = l.url && /^https?:\/\//i.test(l.url);
+        const attrs = isExternal ? ' target="_blank" rel="noopener"' : '';
+        return `<li><a href="${l.url}"${attrs}>${l.label}</a></li>`;
+      })
       .join("");
     return `<ul class="${className}">${items}</ul>`;
   },

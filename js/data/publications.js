@@ -6,7 +6,7 @@ const PUBLICATIONS = {
 
   // Optional note under the section heading.
   note: `<span class="me">Bold</span> denotes my name.
-         See my <a href="https://scholar.google.com/citations?user=NUPZdZoAAAAJ" target="_blank" rel="noopener">Google Scholar profile</a>
+         See my <a href="https://scholar.google.com/citations?user=NUPZdZoAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>
          or <a href="https://orcid.org/0000-0002-1571-8221" target="_blank" rel="noopener">ORCID</a> for the complete citation record.`,
 
   groups: [
