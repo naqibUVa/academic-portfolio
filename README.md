@@ -5,7 +5,7 @@
 
 > 🌐 **Live Website**: [https://naqibuva.github.io/academic-portfolio/](https://naqibuva.github.io/academic-portfolio/)
 
-Personal academic portfolio for **Naqib Sad Pathan**, PhD Candidate in Electrical Engineering at the University of Virginia (UVA), advised by [Prof. Gustavo K. Rohde](https://datascience.virginia.edu/people/gustavo-k-rohde) in the Imaging and Data Science Laboratory.
+Personal academic portfolio for **Naqib Sad Pathan**, PhD Student in Electrical Engineering at the University of Virginia (UVA), advised by [Prof. Gustavo K. Rohde](https://datascience.virginia.edu/people/gustavo-k-rohde) in the Imaging and Data Science Laboratory.
 
 ---
 

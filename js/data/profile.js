@@ -18,18 +18,18 @@ const PROFILE = {
   authorName: "Naqib Sad Pathan",
 
   // Small pill above your name. Set to "" to hide it entirely.
-  availability: "PhD Candidate · Spring 2027",
+  availability: "PhD Student · Spring 2027",
 
   // Your position. The <span class="accent"> makes the field
   // stand out in your accent color — keep it or remove it.
-  position: 'PhD Candidate in <span class="accent">Electrical Engineering</span>',
+  position: 'PhD Student in <span class="accent">Electrical Engineering</span>',
 
   // Department and institution, on the line underneath.
   affiliation: "Imaging and Data Science Lab (Rohde Lab), University of Virginia",
 
   // Two sentences on your research, written for a committee
   // member outside your subfield.
-  intro: `I am a PhD candidate in Electrical Engineering at the University of Virginia,
+  intro: `I am a PhD student in Electrical Engineering at the University of Virginia,
           working with <a href="https://datascience.virginia.edu/people/gustavo-k-rohde" target="_blank" rel="noopener">Prof. Gustavo K. Rohde</a>.
           My research focuses on optimal transport, multiplex image analysis (4i technique),
           and machine learning methods for high-dimensional biomedical measurements.`,

@@ -7,7 +7,7 @@ const ABOUT = {
   // One entry per paragraph.
   paragraphs: [
 
-    `I am a PhD candidate in Electrical Engineering at the University of Virginia, advised by
+    `I am a PhD student in Electrical Engineering at the University of Virginia, advised by
      <a href="https://datascience.virginia.edu/people/gustavo-k-rohde" target="_blank" rel="noopener">Prof. Gustavo K. Rohde</a>
      in the Imaging and Data Science Laboratory. My work sits at the intersection of mathematical data science,
      machine learning, and computational biology, with a special focus on optimal transport and multiplex imaging.`,
